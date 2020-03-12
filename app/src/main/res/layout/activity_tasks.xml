@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ToDo List"
+        android:textColorLink="#E3004D"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,17 +32,18 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:text="Add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onClickButtonAdd"/>
+            android:onClick="onClickButtonAdd"
+            android:text="Add" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="onClickButtonDelete"/>
+            android:onClick="onClickButtonDelete"
+            android:text="Delete" />
     </LinearLayout>
 
     <ListView
