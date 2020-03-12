@@ -1,2 +1,2 @@
 # ToDoList-Project
-The simple ToDo Android application
+The simple ToDo android application.
