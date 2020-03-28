@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 // The main menu where is the user can continue work by pushing "Start" button or change settings in the app
-public class MainActivity extends AppCompatActivity {
+public class  MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,5 +17,10 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClickNext(View view) {
         Intent logInActivity = new Intent(this, EnterActivity.class);
         startActivity(logInActivity);
+    }
+
+    public void onButtonClickSettings(View view) {
+        Intent settingsActivity = new Intent(this, SettingsForApp.class);
+        startActivity(settingsActivity);
     }
 }
