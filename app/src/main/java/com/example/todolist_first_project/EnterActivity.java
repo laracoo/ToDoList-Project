@@ -15,12 +15,7 @@ public class EnterActivity extends AppCompatActivity {
     }
 
     public void onLogInClickButton(View view) {
-        Intent logInActivity = new Intent(this, LogInActivity.class);
-        startActivity(logInActivity);
-    }
-
-    public void onSingInClickButton(View view) {
-        Intent singInActivity = new Intent(this,SingInActivity.class);
-        startActivity(singInActivity);
+        Intent taskActivity = new Intent(this,TasksActivity.class);
+        startActivity(taskActivity);
     }
 }

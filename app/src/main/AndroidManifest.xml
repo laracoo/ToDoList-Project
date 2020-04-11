@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SettingsForApp"></activity>
-        <activity android:name=".SingInActivity" />
-        <activity android:name=".LogInActivity" />
+        <activity android:name=".ActivityForAuthorization" />
         <activity android:name=".EnterActivity" />
         <activity android:name=".TasksActivity" />
         <activity android:name=".MainActivity">
