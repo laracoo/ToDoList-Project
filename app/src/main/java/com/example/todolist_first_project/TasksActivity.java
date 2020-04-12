@@ -33,7 +33,7 @@ public class TasksActivity extends AppCompatActivity {
             arrayList.add(preferencesRestore.getString(String.valueOf(i), ""));
         }
         listView = findViewById(R.id.list_of_tasks);
-        arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_single_choice, arrayList);
+        arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_multiple_choice, arrayList);
         listView.setAdapter(arrayAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -65,7 +65,9 @@ public class TasksActivity extends AppCompatActivity {
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
         } else {
-            arrayList.remove(chosenItemPosition);
+            for (int item = 0; item < chosenItemPosition; item++) {
+                arrayList.remove(item);
+            }
             arrayAdapter.notifyDataSetChanged();
         }
     }
